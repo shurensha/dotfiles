@@ -1,0 +1,3 @@
+#!/bin/bash
+tmux new-session -ds shuren
+tmux new-session -As notes -c ~/Documents/notes "nvim +ObsidianToday"

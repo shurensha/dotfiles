@@ -48,7 +48,10 @@ return {
 				end,
 			})
 			vim.cmd.colorscheme("hybrid")
-			vim.cmd([[highlight Normal guibg=black]])
+			vim.api.nvim_set_hl(0, "Normal", { bg = "black" })
+			vim.api.nvim_set_hl(0, "NormalNC", { bg = "black" })
+			vim.api.nvim_set_hl(0, "@markup.heading", { bold = true })
+			vim.api.nvim_set_hl(0, "@markup.raw.block", { fg = nil })
 		end,
 	},
 }

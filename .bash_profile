@@ -23,3 +23,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 alias config='/usr/bin/git --git-dir=/Users/shuren/.cfg/ --work-tree=/Users/shuren'
+
+. /opt/homebrew/etc/profile.d/z.sh
+

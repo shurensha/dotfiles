@@ -5,11 +5,11 @@ local id = vim.api.nvim_create_augroup("FormatAutogroup", {
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 	group = id,
 	pattern = { "*" },
-    callback = function()
-        if vim.bo.filetype ~= 'oil' then
-            vim.cmd("FormatWrite")
-        end
-    end,
+	callback = function()
+		if vim.bo.filetype ~= "oil" then
+			vim.cmd("FormatWrite")
+		end
+	end,
 })
 
 vim.api.nvim_create_autocmd("DiagnosticChanged", {
@@ -30,6 +30,5 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 		vim.api.nvim_set_hl(0, "@markup.strong", { bold = true })
 		vim.api.nvim_set_hl(0, "@markup.strikethrough", { strikethrough = true })
 		vim.api.nvim_set_hl(0, "@markup.italic", { italic = true })
-		vim.api.nvim_set_hl(0, "@markup.heading", { bold = true })
 	end,
 })

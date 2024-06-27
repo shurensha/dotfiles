@@ -17,5 +17,5 @@ normal = { family = "Liga SFMono Nerd Font", style = "Regular" }
 bold = { family = "Liga SFMono Nerd Font", style = "SemiBold" }
 size = 14
 [shell]
-program = "/opt/homebrew/bin/tmux"
-args = ["new-session", "-A", "-s", "shuren"]
+program = "/opt/homebrew/bin/bash"
+args = ["-ilc", "setup-tmux;exec /opt/homebrew/bin/bash -il"]
