@@ -5,3 +5,4 @@ alias chrome-debug="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chro
 alias wake="wakeonlan 24:4B:FE:06:D5:2C"
 alias ein="ssh shuren@einstein"
 alias reload="source ~/.bash_profile"
+alias lsr="ls -larth"

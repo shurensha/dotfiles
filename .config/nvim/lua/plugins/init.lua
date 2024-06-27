@@ -143,7 +143,8 @@ return {
 	},
 
 	{
-        "melbaldove/llm.nvim",
+		dir = "~/llm.nvim",
+		name = "llm.nvim",
 		dependencies = { "nvim-neotest/nvim-nio" },
 		config = function()
 			require("llm").setup({

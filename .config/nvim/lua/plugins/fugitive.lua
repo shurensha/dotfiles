@@ -1,8 +1,9 @@
 return {
-    {
-        'tpope/vim-fugitive',
-        keys = {
-            { "<leader>gs", "<cmd>vertical Git<CR>", desc = "Vertical git", }
-        }
-    }
+	{
+		"tpope/vim-fugitive",
+		lazy = false,
+		keys = {
+			{ "<leader>gs", "<cmd>vertical Git<CR>", desc = "Vertical git" },
+		},
+	},
 }
