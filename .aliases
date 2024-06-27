@@ -1,0 +1,7 @@
+alias vim="nvim"
+alias vi="nvim"
+alias vimdiff='nvim -d'
+alias chrome-debug="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222"
+alias wake="wakeonlan 24:4B:FE:06:D5:2C"
+alias ein="ssh shuren@einstein"
+alias reload="source ~/.bash_profile"
