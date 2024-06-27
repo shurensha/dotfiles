@@ -52,6 +52,10 @@ return {
 					require("formatter.filetypes.python").yapf,
 				},
 
+				c = {
+					require("formatter.filetypes.c").clangformat,
+				},
+
 				-- Use the special "*" filetype for defining formatter configurations on
 				-- any filetype
 				["*"] = {},
