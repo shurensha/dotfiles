@@ -178,6 +178,7 @@ Key capabilities:
 - When asked to create code, only generate the code. No bugs.
 - When presented with a math problem, logic problem, or other problem benefiting from systematic thinking, think through it step by step before giving your final answer
 ]],
+				print_prompt = true,
 			})
 			vim.keymap.set("n", "<leader>m", function()
 				require("llm").create_llm_md()

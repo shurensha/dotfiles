@@ -4,7 +4,7 @@ import = [
 [env]
 TERM = "alacritty-direct"
 [window]
-option_as_alt = "Both"
+option_as_alt = "OnlyRight"
 decorations = "Buttonless"
 dynamic_padding = true
 startup_mode = "Maximized"
