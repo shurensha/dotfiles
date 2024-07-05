@@ -1,18 +1,14 @@
 #!/usr/bin/env bash
 
-export WORKDIR=/Users/shuren
-export WORKDIR=~/fun:$WORKDIR
-export WORKDIR=~/fun/jupyter:$WORKDIR
-export WORKDIR=~/hy:$WORKDIR
-export WORKDIR=~/ras:$WORKDIR
-export WORKDIR=~/.config/nvim:$WORKDIR
+export WORKDIR=/home/shuren
+export WORKDIR=~/dotfiles/.config/nvim:$WORKDIR
 export WORKDIR=~/Documents/notes:$WORKDIR
 
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
     workdirs=$(echo $WORKDIR | tr ':' ' ')
-    selected=$(find $workdirs mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find $workdirs -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
